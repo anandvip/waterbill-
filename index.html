@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formal Objection — HSVP Bill — Consumer No. 2266</title>
+<title>Formal Representation — HSVP Bill — Consumer No. 2266</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
@@ -16,9 +16,13 @@
     --muted:#5a564f;
     --soft:rgba(107,27,27,0.05);
   }
+
   *{box-sizing:border-box;}
-  html,body{
-    margin:0;padding:0;
+
+  html,
+  body{
+    margin:0;
+    padding:0;
     background:#e6e3da;
     color:var(--ink);
     font-family:'EB Garamond',Georgia,serif;
@@ -26,15 +30,25 @@
     line-height:1.55;
     -webkit-font-smoothing:antialiased;
   }
+
   .toolbar{
-    position:fixed;top:14px;right:14px;
-    background:var(--ink);color:var(--paper);
-    padding:9px 16px;border-radius:2px;border:none;
+    position:fixed;
+    top:14px;
+    right:14px;
+    background:var(--ink);
+    color:var(--paper);
+    padding:9px 16px;
+    border-radius:2px;
+    border:none;
     font-family:'Cormorant Garamond',serif;
-    font-size:11pt;letter-spacing:0.18em;
-    text-transform:uppercase;cursor:pointer;
-    z-index:50;transition:background .2s ease;
+    font-size:11pt;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    cursor:pointer;
+    z-index:50;
+    transition:background .2s ease;
   }
+
   .toolbar:hover{background:var(--accent);}
 
   .page{
@@ -50,7 +64,6 @@
       radial-gradient(circle at 80% 90%, rgba(0,0,0,0.012) 0%, transparent 40%);
   }
 
-  /* Header */
   .header{
     display:flex;
     justify-content:space-between;
@@ -59,42 +72,70 @@
     padding-bottom:12px;
     margin-bottom:22px;
   }
+
   .doc-type{
     font-family:'Cormorant Garamond',serif;
-    font-size:9.5pt;letter-spacing:0.3em;
-    text-transform:uppercase;color:var(--muted);
+    font-size:9.5pt;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color:var(--muted);
   }
+
   .doc-title{
     font-family:'Cormorant Garamond',serif;
-    font-size:23pt;font-weight:600;
-    line-height:1.05;margin-top:4px;
+    font-size:23pt;
+    font-weight:600;
+    line-height:1.05;
+    margin-top:4px;
     letter-spacing:-0.005em;
   }
+
   .doc-title em{
-    font-style:italic;font-weight:500;
+    font-style:italic;
+    font-weight:500;
     color:var(--accent);
   }
-  .header-right{
-    text-align:right;font-size:10.5pt;
-    color:var(--muted);line-height:1.5;
-  }
-  .header-right strong{color:var(--ink);font-weight:600;}
 
-  /* Address grid */
-  .addr-grid{
-    display:grid;grid-template-columns:1fr 1fr;
-    gap:28px;margin-bottom:18px;
+  .header-right{
+    text-align:right;
+    font-size:10.5pt;
+    color:var(--muted);
+    line-height:1.5;
   }
+
+  .header-right strong{
+    color:var(--ink);
+    font-weight:600;
+  }
+
+  .addr-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    margin-bottom:18px;
+  }
+
   .addr-label{
     font-family:'Cormorant Garamond',serif;
-    font-size:9pt;letter-spacing:0.22em;
-    text-transform:uppercase;color:var(--muted);
+    font-size:9pt;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--muted);
     margin-bottom:6px;
     border-bottom:1px solid var(--muted);
     padding-bottom:3px;
   }
-  .addr-block{font-size:11.5pt;line-height:1.5;}
-  .addr-block strong{display:block;font-weight:600;margin-bottom:2px;}
+
+  .addr-block{
+    font-size:11.5pt;
+    line-height:1.5;
+  }
+
+  .addr-block strong{
+    display:block;
+    font-weight:600;
+    margin-bottom:2px;
+  }
 
   .placeholder{
     color:var(--accent);
@@ -104,153 +145,303 @@
     border-radius:2px;
   }
 
-  /* Subject */
   .subject{
     border-top:1px solid var(--rule);
     border-bottom:1px solid var(--rule);
-    padding:14px 0;margin:18px 0 22px 0;
+    padding:14px 0;
+    margin:18px 0 22px 0;
   }
+
   .subject-label{
     font-family:'Cormorant Garamond',serif;
-    font-size:9pt;letter-spacing:0.28em;
-    text-transform:uppercase;color:var(--muted);
+    font-size:9pt;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--muted);
     margin-bottom:6px;
   }
+
   .subject-text{
-    font-size:12.5pt;font-weight:600;
+    font-size:12.5pt;
+    font-weight:600;
     line-height:1.4;
   }
 
-  /* References */
   .refs{
     background:var(--soft);
     border-left:3px solid var(--accent);
-    padding:12px 16px;margin-bottom:22px;
+    padding:12px 16px;
+    margin-bottom:22px;
     font-size:10.5pt;
   }
+
   .refs-label{
     font-family:'Cormorant Garamond',serif;
-    font-size:9pt;letter-spacing:0.22em;
-    text-transform:uppercase;color:var(--accent);
-    margin-bottom:6px;font-weight:600;
+    font-size:9pt;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:6px;
+    font-weight:600;
   }
-  .refs ol{margin:0;padding-left:20px;}
+
+  .refs ol{
+    margin:0;
+    padding-left:20px;
+  }
+
   .refs li{margin-bottom:3px;}
 
-  /* Body sections */
   h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:15pt;font-weight:600;
+    font-size:15pt;
+    font-weight:600;
     margin:24px 0 8px 0;
     letter-spacing:0.005em;
     page-break-after:avoid;
   }
+
   h2 .num{
     color:var(--accent);
     margin-right:10px;
     font-style:italic;
   }
-  p{margin:0 0 10px 0;text-align:justify;}
 
-  /* Roman numeral list for grounds */
-  .grounds{
-    padding-left:0;list-style:none;
-    counter-reset:grounds;margin:0 0 14px 0;
+  p{
+    margin:0 0 10px 0;
+    text-align:justify;
   }
+
+  .grounds{
+    padding-left:0;
+    list-style:none;
+    counter-reset:grounds;
+    margin:0 0 14px 0;
+  }
+
   .grounds li{
     counter-increment:grounds;
-    position:relative;padding-left:38px;
-    margin-bottom:13px;text-align:justify;
+    position:relative;
+    padding-left:38px;
+    margin-bottom:13px;
+    text-align:justify;
   }
-  .grounds li::before{
-    content:counter(grounds,upper-roman) ".";
-    position:absolute;left:0;top:0;
-    font-family:'Cormorant Garamond',serif;
-    font-size:11.5pt;font-weight:600;
-    color:var(--accent);width:30px;
-  }
-  .grounds li strong{font-weight:600;}
-  .grounds li em{color:var(--accent);font-style:italic;}
 
-  .relief-list{padding-left:24px;margin:8px 0 14px 0;}
-  .relief-list li{margin-bottom:7px;text-align:justify;}
+  .grounds li::before{
+    content:counter(grounds, upper-roman) ".";
+    position:absolute;
+    left:0;
+    top:0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:11.5pt;
+    font-weight:600;
+    color:var(--accent);
+    width:30px;
+  }
+
+  .grounds li strong{font-weight:600;}
+
+  .grounds li em{
+    color:var(--accent);
+    font-style:italic;
+  }
+
+  .relief-list{
+    padding-left:24px;
+    margin:8px 0 14px 0;
+  }
+
+  .relief-list li{
+    margin-bottom:7px;
+    text-align:justify;
+  }
+
   .relief-list li strong{font-weight:600;}
 
-  /* Signature */
   .signature{
     margin-top:38px;
-    display:grid;grid-template-columns:1fr 1fr;
+    display:grid;
+    grid-template-columns:1fr 1fr;
     gap:28px;
   }
+
   .sig-line{
     margin-top:50px;
     border-top:1px solid var(--ink);
-    padding-top:5px;font-size:10pt;
+    padding-top:5px;
+    font-size:10pt;
     color:var(--muted);
   }
 
-  /* Copy to */
   .copy-to{
-    margin-top:30px;padding-top:14px;
+    margin-top:30px;
+    padding-top:14px;
     border-top:1px dashed var(--muted);
     font-size:10.5pt;
   }
+
   .copy-to-label{
     font-family:'Cormorant Garamond',serif;
-    font-size:9pt;letter-spacing:0.22em;
-    text-transform:uppercase;color:var(--muted);
-    margin-bottom:6px;font-weight:600;
+    font-size:9pt;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:6px;
+    font-weight:600;
   }
-  .copy-to ul{margin:0;padding-left:20px;}
+
+  .copy-to ul{
+    margin:0;
+    padding-left:20px;
+  }
+
   .copy-to li{margin-bottom:3px;}
 
   .footer-mark{
     margin-top:24px;
-    display:flex;justify-content:space-between;
+    display:flex;
+    justify-content:space-between;
     font-family:'Cormorant Garamond',serif;
-    font-size:9pt;letter-spacing:0.22em;
-    text-transform:uppercase;color:var(--muted);
+    font-size:9pt;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--muted);
     border-top:1px solid var(--muted);
     padding-top:8px;
   }
 
-  /* Print rules */
+  .ack-slip{
+    margin-top:28px;
+    border:1.5px dashed var(--ink);
+    padding:14px 16px 18px 16px;
+    background:rgba(0,0,0,0.015);
+    position:relative;
+  }
+
+  .ack-cut{
+    position:absolute;
+    top:-10px;
+    left:14px;
+    background:var(--paper);
+    padding:0 8px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:10pt;
+    letter-spacing:0.18em;
+    color:var(--muted);
+  }
+
+  .ack-cut::before{
+    content:"✂  ";
+    color:var(--accent);
+  }
+
+  .ack-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:13pt;
+    font-weight:600;
+    margin-bottom:4px;
+  }
+
+  .ack-sub{
+    font-size:9.5pt;
+    color:var(--muted);
+    font-style:italic;
+    margin-bottom:12px;
+  }
+
+  .ack-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px 22px;
+    font-size:10.5pt;
+  }
+
+  .ack-row{
+    border-bottom:1px solid var(--ink);
+    padding-bottom:14px;
+    min-height:30px;
+  }
+
+  .ack-row .label{
+    font-family:'Cormorant Garamond',serif;
+    font-size:8.5pt;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--muted);
+    display:block;
+    margin-bottom:2px;
+  }
+
+  .ack-row.full-width{
+    grid-column:1 / -1;
+  }
+
+  .ack-seal{
+    grid-column:1 / -1;
+    border:1px dashed var(--muted);
+    padding:14px;
+    text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-size:9.5pt;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-top:6px;
+  }
+
+  .closing-space{
+    margin-top:20px;
+  }
+
   @media print{
-    html,body{background:white;}
+    html,
+    body{background:white;}
+
     .page{
-      margin:0;box-shadow:none;
+      margin:0;
+      box-shadow:none;
       background-image:none;
     }
+
     .placeholder{
       background:transparent;
       color:#7a1f1f;
     }
-    .toolbar,.no-print{display:none !important;}
+
+    .toolbar,
+    .no-print{display:none !important;}
+
     h2{page-break-after:avoid;}
-    .grounds li,.relief-list li{page-break-inside:avoid;}
+
+    .grounds li,
+    .relief-list li{page-break-inside:avoid;}
   }
-  @page{size:A4;margin:0;}
+
+  @page{
+    size:A4;
+    margin:0;
+  }
 </style>
 </head>
 <body>
 
-<button class="toolbar no-print" onclick="window.print()">Print · Save as PDF</button>
+<button class="toolbar no-print" type="button" id="printButton">Print · Save as PDF</button>
 
-<div class="page">
-
+<main class="page">
   <header class="header">
     <div class="header-left">
-      <div class="doc-type">Formal Written Objection</div>
-      <div class="doc-title">Statement of Dispute<br>&amp; <em>Demand for Written Assessment</em></div>
+      <div class="doc-type">Letter of Representation — In Good Faith</div>
+      <div class="doc-title">Request for Bill Reconciliation<br>&amp; <em>Waiver of Late-Payment Surcharge</em></div>
     </div>
+
     <div class="header-right">
-      <strong>Date:</strong> <span class="placeholder">[DD MMM 2026]</span><br>
+      <strong>Date:</strong> <span class="placeholder">[Date of submission]</span><br>
       <strong>Ref:</strong> Consumer No. 2266<br>
       Site Code: 151837 — Kurukshetra
     </div>
   </header>
 
-  <div class="addr-grid">
+  <section class="addr-grid" aria-label="Address details">
     <div>
       <div class="addr-label">To</div>
       <div class="addr-block">
@@ -261,103 +452,116 @@
         Haryana
       </div>
     </div>
+
     <div>
       <div class="addr-label">From</div>
       <div class="addr-block">
-        <strong><span class="placeholder">[Full Name as per HSVP Records]</span></strong>
-        Consumer / Lawful Representative of Consumer<br>
-        Connection: Plot E-HN0751, Sector 7-U, Kurukshetra<br>
+        <strong>Smt. Satya</strong>
+        Consumer of record, HSVP Water Connection<br>
+        House No. 751 (Plot E-HN0751), Sector 7-U, Kurukshetra<br>
         Consumer Number: 2266 &nbsp;|&nbsp; Site Code: 151837<br>
-        Mobile: <span class="placeholder">[Phone]</span> &nbsp;|&nbsp; Email: <span class="placeholder">[Email]</span>
+        Mobile: +91 9896918475 &nbsp;|&nbsp; Email: 9896918475v@gmail.com
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="subject">
+  <section class="subject" aria-label="Subject">
     <div class="subject-label">Subject</div>
     <div class="subject-text">
-      Formal objection to the levy of arrears amounting to ₹4,556.00 against Consumer No. 2266 — case of admitted meter malfunction acted upon under verbal direction of HSVP staff — demand for written assessment order, computation basis, and citation of the governing tariff clause.
+      Respectful representation regarding the apparent mismatch between the amount printed on the HSVP water bill and the amount reflected in the digital biller / banking-application interface against Consumer No. 2266 — request that the matter be examined at the Department's end, the billing-agent records be reconciled with the official printed bill, and the late-payment surcharge be kindly waived in light of the consumer's cooperative conduct throughout.
     </div>
-  </div>
+  </section>
 
-  <div class="refs">
+  <section class="refs" aria-label="References">
     <div class="refs-label">References</div>
     <ol>
-      <li>Bill No. <strong>A257B9F3B96BC48F</strong> dated 09/05/2026 — current bill, period 17/02/2026 to 24/04/2026 (carries the disputed arrears).</li>
-      <li>Bill No. <strong>AB79C9F2F785D9A6</strong> — prior bill, period 13/11/2025 to 16/02/2026 (origin of the disputed amount; due 03/03/2026).</li>
-      <li>HUDA Tariff Manual published at waterbilling.hsvphry.org.in/Downloads/Tariff_Manual_HUDA.pdf</li>
-      <li>Principles of Natural Justice; Articles 14 and 265 of the Constitution of India.</li>
-      <li>Consumer Protection Act, 2019.</li>
+      <li>Bill No. <strong>A257B9F3B96BC48F</strong> dated 09/05/2026 — current bill generated by the meter reader during the premises visit, for the period 17/02/2026 to 24/04/2026 (printed bill of record on which this representation is based).</li>
+      <li>Bill No. <strong>AB79C9F2F785D9A6</strong> — prior bill, period 13/11/2025 to 16/02/2026, due 03/03/2026 (the cycle from which the present arrears entry of ₹4,556.00 has been carried forward). The said bill was not reflected / fetchable in the UPI or banking-application biller interface added by the consumer, due to which payment could not be made through that channel at the relevant time.</li>
     </ol>
-  </div>
+  </section>
 
-  <p>Respected Sir,</p>
+  <p>Respected Sir/Madam,</p>
 
-  <p>I am writing in respectful but firm objection to the arrears of <strong>₹4,556.00</strong> appearing on the above-referenced bill, and to place on record the procedural irregularities through which this demand has been raised against the consumer.</p>
+  <p>I am writing in good faith to bring to your kind attention an apparent discrepancy that has appeared on the above-referenced water bill, and to request the Department's assistance in reconciling the same. The consumer has been cooperative throughout, has acted on every direction received from the Department's staff in due time, and has at no point attempted to mislead, delay, or evade legitimate dues. This letter is therefore neither an objection nor a complaint — it is a respectful representation seeking clarification and reconciliation.</p>
 
   <h2><span class="num">A.</span>Statement of Facts</h2>
   <ol class="relief-list">
     <li>On or about <span class="placeholder">[date of meter-reader's visit]</span>, HSVP meter-reading staff identified, during a routine reading, that the existing water meter installed at the above premises was <strong>under-reading consumption due to mechanical malfunction</strong>.</li>
     <li>The said HSVP official, in his official capacity, gave a <strong>verbal direction</strong> to the consumer to procure a new water meter and present it for inspection and certification at the HSVP office, Kurukshetra. <em>No written report of the malfunction was issued at that time, nor was any written assessment of past consumption initiated then.</em></li>
-    <li>Acting in good faith and in full compliance with the verbal direction of the HSVP official, the consumer <strong>procured a new meter at his own cost and presented it for inspection</strong> at the HSVP office on <span class="placeholder">[date of inspection]</span>. The new meter was approved and installed.</li>
+    <li>Acting in good faith and in full compliance with the verbal direction of the HSVP official, the consumer <strong>procured a new meter at her own cost and presented it for inspection</strong> at the HSVP office on <span class="placeholder">[date of inspection]</span>. The new meter was approved and installed.</li>
     <li>The current and prior bills are computed on readings drawn from the new, certified meter (Old 233 → 309 → 373 KL).</li>
-    <li>Notwithstanding the above, an arrears amount of <strong>₹4,556.00</strong> has been silently rolled into the consumer's account, with <strong>no accompanying written assessment order, no disclosed methodology, and no citation of the tariff clause</strong> under which it is levied.</li>
+    <li>Notwithstanding the consumer's full compliance, an arrears amount of <strong>₹4,556.00</strong> has thereafter appeared on the current bill <strong>without any prior written intimation</strong> regarding the period of meter malfunction, the methodology of computation, or the basis on which the back-billing has been carried out. The consumer learned of this amount only on receipt of the printed bill itself.</li>
   </ol>
 
-  <h2><span class="num">B.</span>Grounds of Objection</h2>
+  <h2><span class="num">B.</span>Observations Respectfully Placed Before the Department</h2>
   <ol class="grounds">
-    <li><strong>Absence of a Written Assessment Order.</strong> A demand for back-calculated consumption arising out of an admitted meter fault is not sustainable as a mere line item on a routine bill. It must be supported by a separate, reasoned, written assessment order issued by the competent authority, identifying the period of malfunction, the basis of estimation, and the clause of the Tariff Manual invoked. No such order has been served upon the consumer.</li>
-
-    <li><strong>Verbal Communication Insufficient as Notice.</strong> The original communication regarding meter malfunction was made verbally by HSVP staff. While the consumer acted upon it in good faith, a verbal communication cannot be the sole record of an event that subsequently gives rise to a financial demand. The administrative file on the HSVP side must contain a written meter-fault report, a meter testing report from the inspection, and an assessment based thereon. None of these has been shared with the consumer.</li>
-
-    <li><strong>Fault of the Department, Liability on the Consumer.</strong> The metering equipment is the property and responsibility of HSVP. Any malfunction of that equipment is a departmental failure. To impose retrospective financial liability on the consumer for a period during which HSVP's own equipment was admittedly defective — without first establishing, in writing, the basis on which such liability is computed — offends the cardinal rule that no person shall be condemned unheard (<em>audi alteram partem</em>).</li>
-
-    <li><strong>Violation of Article 265 of the Constitution.</strong> No charge or levy may be collected except by the authority of law. The arrears in question carry no transparent legal anchor on the face of the bill. The consumer is therefore unable to verify whether the demand is authorised by the HUDA Tariff Manual, and if so, by which clause and on what computation. Until disclosed, the demand stands un-reasoned and voidable.</li>
-
-    <li><strong>Deficiency in Service under the Consumer Protection Act, 2019.</strong> An opaque, un-reasoned billing demand against a consumer of an essential public utility constitutes a deficiency in service, and is amenable to the jurisdiction of the District Consumer Disputes Redressal Commission, Kurukshetra.</li>
+    <li><strong>Authority works in writing.</strong> It is the consistent practice of the Department, and indeed the established procedure of any urban authority, that any fine, surcharge, or penalty levied upon a consumer must be communicated in writing and must <em>appear on the printed bill itself</em>. Verbal communication, while useful for operational coordination, cannot by itself create a financial liability.</li>
+    <li><strong>The arrears entry on the current bill carries no underlying written intimation.</strong> The amount of ₹4,556.00, while visible on the printed bill, has not been preceded by any separate written communication to the consumer explaining how it was arrived at, the period of meter malfunction it relates to, or the rate basis on which it has been computed. The consumer is therefore unable to verify what she is being asked to pay.</li>
+    <li><strong>Apparent discrepancy between the printed bill and the digital biller / banking-application interface.</strong> On checking the bill against the amount reflected, or not reflected, through the bill-payment biller integrated into the consumer's UPI / banking application, the figures and bill availability do not align with the printed bill of record. This raises a respectful concern that a third-party billing agent may be acting upon incorrect or unreconciled data, and possibly without the express written confirmation of the Department on each line item. <em>It is hard to imagine that the Department itself would knowingly permit a mismatch of this nature</em>, and the consumer therefore presumes that the Department would also wish for this to be examined and corrected.</li>
+    <li><strong>The consumer's conduct has been entirely cooperative.</strong> The new meter was procured at the consumer's own cost, presented for inspection at the Department's office as instructed, and installed without delay. All current readings are drawn from this new, certified meter. There has been no attempt at concealment, no malafide intention, and no effort to either mislead or take advantage of the system. The consumer's entire interaction with the Department has been in the spirit of cooperation.</li>
   </ol>
 
-  <h2><span class="num">C.</span>Reliefs Sought</h2>
-  <p>In light of the above, the consumer respectfully requests that the Department:</p>
+  <h2><span class="num">C.</span>Requests in Good Faith</h2>
+  <p>In light of the above observations, and without raising the matter to any higher authority or forum at this stage, the consumer respectfully requests that the Department:</p>
+
   <ol class="relief-list">
-    <li>Furnish, in writing within thirty (30) days, a copy of the <strong>meter-fault detection report</strong> recorded by HSVP staff, the <strong>meter testing report</strong> issued at the time of new-meter inspection, and the <strong>written assessment order</strong> on which the ₹4,556.00 arrears is based.</li>
-    <li>Disclose the <strong>specific clause of the HUDA Tariff Manual</strong> under which the back-calculation has been performed, along with the full computation worksheet showing the average consumption applied, the period of back-billing, and the rationale for both.</li>
-    <li>Place the <strong>recovery of the disputed ₹4,556.00 and any further surcharge thereon on hold</strong> pending final disposal of this objection. The current cycle's fresh charges of ₹723.97 (water ₹603.31 + sewerage ₹120.66) are not in dispute; kindly confirm the modality by which they may be remitted <em>without prejudice</em> and without being adjusted against the disputed arrears.</li>
-    <li>If, on examination, the back-billing is found to have been raised without the procedural foundations required by the Tariff Manual, <strong>adjust the disputed sum in full</strong> against future bills and waive any surcharge accrued thereon.</li>
+    <li><strong>Examine the conduct of the billing agent</strong> through whom HSVP water-bill amounts are routed to digital biller platforms and banking applications, and ensure that no amount is presented to the consumer through any such interface that has not been first reflected, in identical terms, on the printed bill of record.</li>
+    <li><strong>Furnish written confirmation of the officially billed amount</strong> as it stands on the Department's records today, so that the consumer has a single, authoritative figure on the basis of which payment can be made without ambiguity.</li>
+    <li><strong>Kindly waive the late-payment surcharge</strong> in respect of the prior cycle (₹84.00) and the present cycle (₹72.00, if any), in view of (a) the absence of any prior written intimation regarding the back-billed component, (b) the non-visibility / non-fetchability of the prior bill in the UPI or banking-application biller interface added by the consumer, and (c) the consumer's continuous good-faith conduct throughout.</li>
+    <li><strong>Indicate the modality</strong> by which the consumer may promptly settle the legitimately documented current charges of ₹723.97 (water ₹603.31 + sewerage ₹120.66) for the period 17/02/2026 to 24/04/2026, while the reconciliation of the prior arrears entry is being examined.</li>
   </ol>
 
-  <h2><span class="num">D.</span>Reservation of Rights</h2>
-  <p>The consumer expressly reserves the right, in the event of non-response within thirty (30) days of receipt of this letter, or in the event of a response that does not address the grounds raised herein, to approach the District Consumer Disputes Redressal Commission, Kurukshetra, and / or the Hon'ble High Court of Punjab and Haryana under its writ jurisdiction, for appropriate relief — including but not limited to quashing of the disputed demand, costs of litigation, and compensation for deficiency in service. <strong>This letter shall stand as a record of pre-litigation notice for those purposes.</strong></p>
+  <p>The consumer has every confidence that this matter will be addressed at the Department's end with the same fairness and clarity that has characterised the Department's dealings in the past. <strong>The consumer expressly does not wish to escalate this matter to any higher authority or forum</strong>, and views written communication of this nature as the proper and dignified channel through which any administrative discrepancy ought to be resolved.</p>
 
-  <p>An early, reasoned, and written response is requested. The consumer remains willing to attend the HSVP office in person, on appointment, to inspect the relevant records and, if appropriate, to settle the matter amicably.</p>
+  <p>An early, written, and reasoned response would be most appreciated. The consumer remains willing to attend the HSVP office in person, on appointment, to inspect the relevant records and to assist in the reconciliation in any way the Department considers helpful.</p>
 
-  <p style="margin-top:20px;">Yours faithfully,</p>
+  <p class="closing-space">With respect and in good faith,</p>
 
-  <div class="signature">
+  <section class="signature" aria-label="Signature">
     <div>
       <div class="sig-line">Signature</div>
     </div>
     <div>
-      <div class="sig-line"><span class="placeholder">[Full Name]</span> &nbsp;·&nbsp; Consumer No. 2266</div>
+      <div class="sig-line"><strong>Smt. Satya</strong> &nbsp;·&nbsp; Consumer No. 2266</div>
     </div>
-  </div>
+  </section>
 
-  <div class="copy-to">
-    <div class="copy-to-label">Copy forwarded for information and necessary action to</div>
+  <section class="copy-to" aria-label="Copy forwarded">
+    <div class="copy-to-label">Copy forwarded — for record and parallel registration — by email to</div>
     <ul>
-      <li>The Estate Officer, HSVP, Kurukshetra — for record of dispute against Plot E-HN0751, Sector 7-U.</li>
-      <li>The Legal Cell / Departmental Counsel, HSVP, Kurukshetra Sub-Division — for legal review of the procedural compliance position raised herein.</li>
-      <li>The Public Grievance Officer, HSVP — for parallel registration on the HSVP grievance portal (digital trail).</li>
-      <li>Office file of the consumer.</li>
+      <li><strong>hsvp@gmail.com</strong></li>
+      <li><strong>sde2hsvpkkr@gmail.com</strong></li>
+      <li><strong>ambala1xen@gmail.com</strong></li>
+      <li><strong>Smt. Satya</strong>, House No. 751, Sector 7-U, Kurukshetra — for the consumer's own record and personal file.</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="footer-mark">
-    <span>Without Prejudice</span>
-    <span>Consumer No. 2266 · Page 1</span>
-  </div>
+  <section class="ack-slip" aria-label="Acknowledgment of receipt slip">
+    <span class="ack-cut">For the Consumer's Copy</span>
+    <div class="ack-title">Acknowledgment of Receipt</div>
+    <div class="ack-sub">To be filled, signed, and stamped by the HSVP Dispatch / Receiving Office on the consumer's copy of this representation.</div>
 
-</div>
+    <div class="ack-grid">
+      <div class="ack-row"><span class="label">Diary / Receipt No.</span></div>
+      <div class="ack-row"><span class="label">Date Received</span></div>
+      <div class="ack-row"><span class="label">Received by — Name</span></div>
+      <div class="ack-row"><span class="label">Designation</span></div>
+      <div class="ack-row full-width"><span class="label">Signature of Receiving Officer</span></div>
+      <div class="ack-seal">Place of Office Seal &nbsp;·&nbsp; HSVP Kurukshetra</div>
+    </div>
+  </section>
+
+  <footer class="footer-mark">
+    <span>In Good Faith</span>
+    <span>Consumer No. 2266 · Representation Copy</span>
+  </footer>
+</main>
+
+<script>
+  document.getElementById('printButton').addEventListener('click', function(){
+    window.print();
+  });
+</script>
 
 </body>
 </html>
